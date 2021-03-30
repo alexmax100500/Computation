@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="leTableauPrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.kurtlike.PrimaryController">
+   <children>
+      <Pane fx:id="leTableauGrapheDeFonction" layoutX="14.0" layoutY="36.0" prefHeight="550.0" prefWidth="550.0" style="-fx-background-color: #ffffaa;">
+         <children>
+            <Button fx:id="iterButton" layoutX="14.0" layoutY="524.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="520.0" text="Следующая итерация" />
+         </children></Pane>
+      <Pane fx:id="leTableauChoix" layoutX="586.0" layoutY="36.0" prefHeight="550.0" prefWidth="200.0" style="-fx-background-color: #ffffaa;">
+         <children>
+            <ChoiceBox fx:id="methodeSelection" layoutX="14.0" layoutY="27.0" prefHeight="25.0" prefWidth="158.0" />
+            <ChoiceBox fx:id="lequationChoix" layoutX="15.0" layoutY="77.0" prefHeight="25.0" prefWidth="158.0" />
+            <TextField fx:id="gaucheBordure" layoutX="19.0" layoutY="157.0" prefHeight="25.0" prefWidth="71.0" />
+            <TextField fx:id="droiteBordure" layoutX="100.0" layoutY="157.0" prefHeight="25.0" prefWidth="71.0" />
+            <TextField fx:id="erreur" layoutX="21.0" layoutY="207.0" prefHeight="25.0" prefWidth="158.0" />
+            <Button fx:id="resoudreBouton" layoutX="21.0" layoutY="250.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="158.0" text="Решить" />
+            <TextArea fx:id="console" layoutX="21.0" layoutY="301.0" prefHeight="211.0" prefWidth="158.0" />
+            <Label layoutX="15.0" layoutY="2.0" prefHeight="25.0" prefWidth="158.0" text="Выберете метод">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="52.0" prefHeight="25.0" prefWidth="158.0" text="Выберете функцию">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="107.0" prefHeight="25.0" prefWidth="158.0" text="Ограничение">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="132.0" prefHeight="25.0" prefWidth="47.0" text="Слева">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="100.0" layoutY="132.0" prefHeight="25.0" prefWidth="71.0" text="Справа">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="182.0" prefHeight="25.0" prefWidth="53.0" text="Точность">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="clearButton" layoutX="21.0" layoutY="512.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="158.0" text="Очистить график" />
+         </children>
+      </Pane>
+      <MenuBar fx:id="leMenu" layoutY="2.0" prefHeight="25.0" prefWidth="800.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

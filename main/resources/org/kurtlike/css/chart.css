@@ -1,0 +1,9 @@
+.chart-line-symbol {
+    -fx-background-radius: 1;
+    -fx-padding: 2px ;
+}
+.chart > .chart-content > .chart-plot-background {
+    -fx-background-image: url(/org/kurtlike/picture/bk.jpg);
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}
